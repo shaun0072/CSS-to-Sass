@@ -1,8 +1,6 @@
 footer {
-	padding-top: 85px;
+	padding: 85px 1em 0;
 	width: 100%;
-	padding-left: 1em;
-	padding-right: 1em;
 }
 .footer-title {
 	text-transform: uppercase;
@@ -40,10 +38,9 @@ hr {
 	display: none;
 	float: right;
 	padding: 0;
-	margin: 39px 0 50px;
+	margin: 39px 0 .5em;
 	width: 100%;
 	background-color: $content-color;
-	margin-bottom: .5em;
 	text-transform: uppercase;
 	font-weight: bold;
 	@include tablet {
