@@ -1,0 +1,68 @@
+.header-container {
+	@extend %clearfix;
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	@include desktop {
+		max-width: 1100px;
+	}
+}
+nav {
+	@extend %clearfix;
+}
+.wrapper {
+	background-color: $content-color;
+	width: 100%;
+	padding: 3em 1em;
+	@include desktop {
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+}
+.wrapper ul {
+	@extend %clearfix;
+}
+.wrapper ul li {
+	@include tablet {
+		width: 50%;
+		float: left;
+		padding-left: .5em;
+		padding-right: .5em;
+	}
+	@include desktop {
+		width: 33.33333%;
+		margin-top: 40px;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}
+.wrapper ul li img {
+	@include tablet {
+		box-shadow: none;
+		transition: box-shadow .2s;
+		&:hover {
+			box-shadow: 10px 10px 5px grey;
+			transition: box-shadow .2s;
+		}
+	}
+}
+.wrapper ul li p {
+	margin-bottom: 63px;
+	@include desktop {
+		font-size: $md-font;
+	}
+}
+footer {
+	@extend %clearfix;
+	@include desktop {
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+}
+.footer-info {
+	@include desktop {
+		max-width: 700px;
+		margin: 0 auto;
+		margin-bottom: 100px;
+	}
+}

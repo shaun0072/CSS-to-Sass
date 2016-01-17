@@ -1,0 +1,31 @@
+/**********Colors************/
+$primary-bg-color    : rgb(248, 248, 248);
+$content-color  : white;
+$links-color    : black;
+$hover-color    : gray;
+
+/**********Typography************/
+$base-font      :  sans-serif;
+$specialty-font : 'Open Sans Condensed', sans-serif;
+$lg-font        : 1.9em;
+$md-font        : 1.3em;
+$sm-font        : .9em;
+
+
+
+
+
+/*********************Media Queries*********************/
+$tablet-width : 768px;
+$desktop-width : 1024px;
+
+@mixin tablet {
+	@media (min-width: #{$tablet-width}) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
